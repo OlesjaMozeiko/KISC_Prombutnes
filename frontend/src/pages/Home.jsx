@@ -89,7 +89,7 @@ function Home() {
 
         Izvēlēties sev piemērotāko no vairāk nekā 200 dizaina variantiem.
         Vairāku valodu atbalsts.
-        Izveidot jaunumu sadaļu, attēlu galerijas vai parastu teksta lapu.
+        Izveidot jaunumu sadaļu, attēlu galerijas vai parastu teksta lap!!!!.
       </div>
 
 
