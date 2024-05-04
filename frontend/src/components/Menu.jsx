@@ -18,7 +18,7 @@ function Menu() {
   return (
     
     <div className='flex flex-col gap-4 p-8 border-r-2 max-h-screen sticky top-0 bg-sky-50'>
-      <div className='text-3xl'><Link to={'/'}>Galvenā lapa</Link></div>
+      <div className='text-3xl mt-4'><Link to={'/'}>Galvenā lapa</Link></div>
       <div className='text-3xl'><Link to={'/employee'}>Darbinieku saraksts</Link></div>
       <div className='text-3xl'><Link to={'/vacation'}>Prombūtņu kalendārs</Link></div>
       <div className='text-3xl'><Link to={'/holiday'}>Svētki un pasākumi</Link></div>

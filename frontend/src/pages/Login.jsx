@@ -55,9 +55,12 @@ const Login = () => {
 
         <div className='mb-5'>
           <label htmlFor="password" className='block mb-2 text-sm font-medium text-gray-900'>Parole</label>
-          <span className='relative'>
-            <input value={password} onChange={(e) => {setPassword(e.target.value)}} type={showPassword ? 'text' : 'password'} id='password' className='bg-gray-50 border border-gray-300 text-sm rounded-lg focus:border-sky-600 block w-full p-2.5' />
-            <AiOutlineEye onClick={ (e) => { setShowPassword(!showPassword) } } className='text-2xl absolute top-0 right-2 translate-y-1/2 cursor-pointer' />
+          <span className='relative flex'>
+            <input value={password} onChange={(e) => {setPassword(e.target.value)}} type={showPassword ? 'text' : 'password'} id='password' className='bg-gray-50 border border-gray-300 text-sm rounded-l-lg focus:border-sky-600 block w-full p-2.5' />
+            <button className='p-2.5 border border-gray-300 rounded-r-lg'>
+            <AiOutlineEye onClick={ (e) => { setShowPassword(!showPassword) } } className='' />
+            </button>
+            
           </span>
         </div>
         <button type='submit' className='text-white bg-sky-600 hover:bg-sky-700 font-medium rounded-lg text-sm px-5 py-2.5'>Login</button>
