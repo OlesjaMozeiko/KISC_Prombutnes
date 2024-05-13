@@ -27,7 +27,7 @@ const App = () => {
       <AuthProvider>
         <Menu className="flex-none" />
         <div className="flex-1">
-          <div className='text-4xl fixed top-8 right-6 text-sky-300'><Link to={'/help'}><BsQuestionCircleFill /></Link></div>
+          <div className='text-4xl fixed bottom-8 right-6 text-sky-300'><Link to={'/help'}><BsQuestionCircleFill /></Link></div>
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/employee" element={<EmployeeList />} />
