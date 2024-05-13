@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { useAuth } from './AuthProvider';
 import { GiExitDoor } from "react-icons/gi";
+import { BsBoxArrowInRight } from 'react-icons/bs';
 
 function Menu() {
   const { isAuthenticated, logout } = useAuth();
@@ -22,10 +23,10 @@ function Menu() {
       <div className='text-3xl'><Link to={'/employee'}>Darbinieku saraksts</Link></div>
       <div className='text-3xl'><Link to={'/vacation'}>Prombūtņu kalendārs</Link></div>
       <div className='text-3xl'><Link to={'/holiday'}>Svētki un pasākumi</Link></div>
-      <div className='text-3xl'><Link to={'/help'}>Lietotāja ceļvedis</Link></div>
+      
       {
-        isAuthenticated ? (<div className='cursor-pointer text-3xl mt-auto' onClick={handleLogout}><GiExitDoor /></div>)
-          : (<div className='text-3xl mt-auto'><Link to={'/login'}>Ieiet</Link></div>)
+        isAuthenticated ? (<div className='cursor-pointer text-5xl mt-auto' onClick={handleLogout}><BsBoxArrowInRight /></div>)
+          : (<div className='text-3xl mt-auto'><Link to={'/login'}>Pieslēgties</Link></div>)
       }
 
     </div>

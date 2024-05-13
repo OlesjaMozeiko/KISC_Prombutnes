@@ -18,7 +18,8 @@ import EditDepartment from "./pages/EditDepartment";
 import EditPosition from "./pages/EditPosition";
 import EditEvent from "./pages/EditEvent";
 import Instruction from "./pages/Instruction";
-
+import { BsQuestionCircleFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
       <AuthProvider>
         <Menu className="flex-none" />
         <div className="flex-1">
+          <div className='text-4xl fixed top-8 right-6 text-sky-300'><Link to={'/help'}><BsQuestionCircleFill /></Link></div>
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/employee" element={<EmployeeList />} />
