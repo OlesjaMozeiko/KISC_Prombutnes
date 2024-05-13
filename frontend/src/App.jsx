@@ -17,7 +17,7 @@ import EditVacationType from "./pages/EditVacationType";
 import EditDepartment from "./pages/EditDepartment";
 import EditPosition from "./pages/EditPosition";
 import EditEvent from "./pages/EditEvent";
-
+import Instruction from "./pages/Instruction";
 
 
 const App = () => {
@@ -32,6 +32,7 @@ const App = () => {
               <Route path="/vacation" element={<VacationCalendar />} />
               <Route path="/holiday" element={<Holidays />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/help" element={<Instruction />} />
 
               <Route path="/vacation/create" element={<CreateVacation />} />
               <Route path="/vacation/show/:id" element={<ShowVacation />} />

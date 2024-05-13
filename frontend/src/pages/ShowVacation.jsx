@@ -246,7 +246,7 @@ const ShowVacation = () => {
                                     </tr>
                                     <tr>
                                         <th className='border border-slate-300 p-2' >Saskaņots</th>
-                                        <td className='border border-slate-300 p-2'>{vacation.approved ? 'Yes' : 'No'}</td>
+                                        <td className='border border-slate-300 p-2'>{vacation.approved ? 'Jā' : 'Nē'}</td>
                                     </tr>
                                 </tbody>
                             )
@@ -254,7 +254,7 @@ const ShowVacation = () => {
 
                 </table>
             )}
-            {(vacation.approved || userData.isAdmin) ? ('') : (<h3 className='mt-2 text-lg font-semibold'>Contact administrator to approve vacation!</h3>)}
+            {(vacation.approved || userData.isAdmin) ? ('') : (<h3 className='mt-2 text-lg font-semibold'>Lūdzu gaidiet vadītāja saskaņojumu!</h3>)}
             {userData?.isAdmin ? (
                 <div className='flex gap-x-2 my-4'>
                     <button onClick={handleSave} className='p-2 bg-sky-600 inline-block rounded-sm text-white'>Salabāt</button>

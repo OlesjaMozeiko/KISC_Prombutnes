@@ -81,7 +81,7 @@ const CreateVacation = () => {
                 <div className='my-4'>
                     <label className='block'>Prombūtnes veids</label>
                     <select className='border-2 border-slate-300' onChange={(e) => { setType(e.target.value) }} required>
-                        <option disabled value={''}>Izvēlne</option>
+                        <option selected disabled value={''}>Izvēlne</option>
                         {vacationTypes.map((vacationType, index) => (
                             <option key={vacationType._id} value={vacationType._id}>{vacationType.name}</option>
                         ))}
@@ -91,7 +91,7 @@ const CreateVacation = () => {
                 <div className='my-4'>
                     <label className='block'>Aizvietotājs</label>
                     <select className='border-2 border-slate-300' onChange={(e) => { setSubstitute(e.target.value) }} required>
-                        <option disabled value={''}>Izvēne</option>
+                        <option selected disabled value={''}>Izvēne</option>
                         {employees.map((employee, index) => (
                             <option key={employee._id} value={employee._id}>{`${employee.name} ${employee.surname}`}</option>
                         ))}

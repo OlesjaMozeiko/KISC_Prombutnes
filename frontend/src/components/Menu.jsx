@@ -22,6 +22,7 @@ function Menu() {
       <div className='text-3xl'><Link to={'/employee'}>Darbinieku saraksts</Link></div>
       <div className='text-3xl'><Link to={'/vacation'}>Prombūtņu kalendārs</Link></div>
       <div className='text-3xl'><Link to={'/holiday'}>Svētki un pasākumi</Link></div>
+      <div className='text-3xl'><Link to={'/help'}>Lietotāja ceļvedis</Link></div>
       {
         isAuthenticated ? (<div className='cursor-pointer text-3xl mt-auto' onClick={handleLogout}><GiExitDoor /></div>)
           : (<div className='text-3xl mt-auto'><Link to={'/login'}>Ieiet</Link></div>)
