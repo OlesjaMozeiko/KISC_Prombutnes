@@ -77,19 +77,11 @@ function Home() {
 
 
       <div className=''>
-        <h2 className='text-xl pb-4'>Interneta lietotāju skaits un internetā veikto darījumu apjoms pieaug ļoti strauji. Mainās arī pircēju paradumi, kas dažādas preces un pakalpojumus iegādājas ar interneta starpniecību. Moderno tehnoloģiju attīstība ražotājiem ir pavērusi milzīgas tirgus iespējas tieši globālajā tīmeklī. Ja Jūs ar interneta starpniecību vēlaties uzsākt vai attīstīt savu biznesu, taču Jūsu rīcībā nav lielu naudas līdzekļu, ko ieguldīt mājaslapas izveidē. Serveris.lv piedāvā Jums ideālu risinājumu – bezmaksas mājas lapas izveidi. Šāds risinājums pieejams visiem Serveris.lv hostinga klientiem un ir piemērots gan individuāliem lietotājiem, gan organizācijām un maziem uzņēmumiem, kas vēlas ar minimāliem līdzekļiem ievietot informāciju par sevi internetā.</h2>
+        <h2 className='text-xl pb-2 bottom-25'> Tīmekļa vietne KISC Prombūtnes paredzēta Kultūras informācijas sistēmu centra darbiniekiem. </h2>
 
 
+        Uzsākot darbu ar vietni, lūdzam  iepazīties ar lietotāja ceļvedi.
 
-        Piedāvājam mājaslapu izveides rīku "Serveris.lv gudrais mājas lapu veidošanas rīks", ar kuru palīdzību klients mājaslapu var izveidot pats.
-
-
-
-        Piedāvātās iespējas:
-
-        Izvēlēties sev piemērotāko no vairāk nekā 200 dizaina variantiem.
-        Vairāku valodu atbalsts.
-        Izveidot jaunumu sadaļu, attēlu galerijas vai parastu teksta lap!!!!.
       </div>
 
 

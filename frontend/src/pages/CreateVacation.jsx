@@ -64,7 +64,7 @@ const CreateVacation = () => {
     return (
         <div className='p-4'>
             <div className='flex justify-between items-center'>
-                <h1 className='text-3xl my-8'>Pievienot atvaļinājumu</h1>
+                <h1 className='text-3xl my-8'>Pievienot prombūtni</h1>
             </div>
 
             <div className='flex flex-col p-4 border-slate-300'>

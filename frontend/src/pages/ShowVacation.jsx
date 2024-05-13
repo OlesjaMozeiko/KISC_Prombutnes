@@ -257,7 +257,7 @@ const ShowVacation = () => {
             {(vacation.approved || userData.isAdmin) ? ('') : (<h3 className='mt-2 text-lg font-semibold'>Lūdzu gaidiet vadītāja saskaņojumu!</h3>)}
             {userData?.isAdmin ? (
                 <div className='flex gap-x-2 my-4'>
-                    <button onClick={handleSave} className='p-2 bg-sky-600 inline-block rounded-sm text-white'>Salabāt</button>
+                    <button onClick={handleSave} className='p-2 bg-sky-600 inline-block rounded-sm text-white'>Saglabāt</button>
                     <button onClick={handleDelete} className='p-2 bg-red-600 inline-block rounded-sm text-white'>Dzēst</button>
                 </div>
             ) : ('')}
