@@ -41,6 +41,6 @@ const AuthProvider = ({ children }) => {
   );
 };
 
-export { AuthProvider }; // Экспортируем AuthProvider как стрелочную функцию
+export { AuthProvider }; // Eksportējam AuthProvider kā norādes funkciju (arrow function)
 
 export const useAuth = () => useContext(AuthContext);

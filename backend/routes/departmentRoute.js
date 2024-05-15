@@ -3,7 +3,7 @@ import { Department } from '../models/departmentModel.js';
 
 const router = express.Router();
 
-// Get All
+// Get all
 router.get('/', async (request, response) => {
     try {
         const departments = await Department.find({});
@@ -18,7 +18,7 @@ router.get('/', async (request, response) => {
     }
 })
 
-// Get By Id
+// Get by Id
 router.get('/:id', async (request, response) => {
     try {
         const { id } = request.params;
@@ -76,7 +76,7 @@ router.put('/:id', async (request, response) => {
     }
 });
 
-//Delete
+//Dzēst
 router.delete('/:id', async (request, response) => {
     try {
         
