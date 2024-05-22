@@ -5,7 +5,7 @@ import { HolidayType } from '../models/holidayTypeModel.js';
 import { Holiday } from '../models/holidayModel.js';
 
 
-// Подключение к MongoDB
+// Connect to MongoDB
 mongoose.connect(mongoDBURL)
     .then(() => {
         populateDatabase();
@@ -21,7 +21,7 @@ mongoose.connect(mongoDBURL)
 
 async function populateDatabase() {
     try {
-        // Удаление всех документов из коллекции перед заполнением
+        // Delete all documents before filling
 
         const currentDate = new Date();
         await Holiday.deleteMany();
@@ -55,17 +55,17 @@ async function populateDatabase() {
             })
 
         await Holiday.insertMany(newHolidays);
-        // Вставка данных в коллекцию
+        // Insert data to collection
         //await YourModel.insertMany(data);
 
-        //console.log('База данных успешно заполнена.');
+        //console.log('database is filled.');
     } catch (error) {
-        console.error('Произошла ошибка:', error);
+        console.error('Error:', error);
     } finally {
-        // Закрытие подключения к MongoDB
+        // End connection to MongoDB
         mongoose.connection.close();
     }
 }
 
-// Вызов функции для заполнения базы данных
+// Call funtion to fill database 
 //populateDatabase();

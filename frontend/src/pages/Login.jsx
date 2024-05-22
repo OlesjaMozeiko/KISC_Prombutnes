@@ -63,7 +63,7 @@ const Login = () => {
             
           </span>
         </div>
-        <button type='submit' className='text-white bg-sky-600 hover:bg-sky-700 font-medium rounded-lg text-sm px-5 py-2.5'>Login</button>
+        <button type='submit' className='text-white bg-sky-600 hover:bg-sky-700 font-medium rounded-lg text-sm px-5 py-2.5'>Ieiet</button>
       </form>
     </div>
   )
